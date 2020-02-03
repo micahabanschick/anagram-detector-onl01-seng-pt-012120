@@ -9,7 +9,7 @@ class Anagram
   
   def match(arr)
     narr = arr.filter do |elem| 
-      elem.length == @word.length && elem.split("").all?{|letter| @word.include?(letter)} == true
+      elem.length == @word.length && @word.split("").all?{|letter| elem.include?(letter)} == true
       #i = 0 
       #while i < elem.length do 
        # elem.include?(@word[i]) == true
