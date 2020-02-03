@@ -10,7 +10,8 @@ class Anagram
   def match(arr)
     narr = arr.filter do |elem| 
       elem.length == @word.length
-      elem.include?(/[asd]/)
+      i = 0 
+      while i < elem.length {elem.include?(@word[i])}
     end 
     narr
   end 
