@@ -11,7 +11,7 @@ class Anagram
     narr = arr.filter do |elem| 
       elem.length == @word.length
       elem.all?{|letter| @word.include?(letter)}
-      i = 0 
+      #i = 0 
       #while i < elem.length do 
        # elem.include?(@word[i]) == true
       #end 
